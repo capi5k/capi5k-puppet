@@ -1,0 +1,17 @@
+{
+  "name": "capi5k-puppet",
+  "version": "1.0.0",
+  "homepage": "https://github.com/msimonin/capi5k-puppet",
+  "authors": [
+    "msimonin <matthieu.simonin@inria.fr>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "exports": ["roles.rb"]
+}
