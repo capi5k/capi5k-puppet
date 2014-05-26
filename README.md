@@ -1,4 +1,13 @@
-capi5k-init 
-===========
+capi5k-puppet 
+==============
 
-* used by xpm init
+Bootstrap puppet on nodes
+
+## Add it to your project : 
+
+```json
+"dependencies" : 
+{
+  "capi5k-puppet": "https://github.com/capi5k-puppet/tarball/master"
+}
+```
