@@ -15,10 +15,8 @@ namespace :puppet do
     env = puppet_version
     env += " #{proxy}"
     run "#{apt_get_p} install -y rubygems" 
-    run "#{proxy} gem install puppet --no-ri --no-rdoc"
-# Alternatively : 
-#    run "#{apt_get_p} update && #{apt_get_p} install -y curl" 
-#    run "#{proxy} curl -L https://raw.github.com/pmorillon/puppet-puppet/master/files/scripts/puppet_install.sh | #{env} sh"
+    run "#{apt_get_p} update && #{apt_get_p} install -y curl" 
+    run "#{proxy} curl -L https://raw.github.com/pmorillon/puppet-puppet/master/files/scripts/puppet_install.sh | #{env} sh"
   end
 
 end
