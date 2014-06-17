@@ -12,7 +12,7 @@ namespace :puppet do
   desc 'Should install puppet on nodes' 
   task :default, :roles => [:puppet] do
     set :user, "root"
-    env = puppet_version
+    env = "PUPPET_VERSION=#{puppet_version}"
     env += " #{proxy}"
     run "#{apt_get_p} install -y rubygems" 
     run "#{apt_get_p} update && #{apt_get_p} install -y curl" 

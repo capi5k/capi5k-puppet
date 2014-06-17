@@ -5,6 +5,6 @@ end
 
 # puppet version to use (env var)
 def puppet_version
-  "PUPPET_VERSION=3.5.1"
+  "3.5.1"
 end
 
